@@ -22,7 +22,7 @@ class App extends React.Component {
             <Switch>
 
               <Route exact path="/">
-                {/* {this.props.auth0.isAuthenticated ? <MyFavorites /> : <Login />} */}
+                {this.props.auth0.isAuthenticated ? <MyFavorites /> : <Login />}
               </Route>
 
               <Route path="/profile">

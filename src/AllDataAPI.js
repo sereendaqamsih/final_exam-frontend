@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { withAuth0 } from '@auth0/auth0-react';
+import { withAuth0 } from '@auth0/auth0-react';
 import axios from 'axios';
 import {Card,Button} from 'react-bootstrap';
 
@@ -55,5 +55,5 @@ Hello all    </Card.Text>
     }
 }
 
-// export default withAuth0(AllDataAPI);
-export default (AllDataAPI);
+export default withAuth0(AllDataAPI);
+// export default (AllDataAPI);
